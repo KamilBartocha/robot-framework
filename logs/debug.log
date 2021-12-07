@@ -1,22 +1,34 @@
 ==============================================================================
-20211207 17:21:05.235 - INFO - + START SUITE: Tests [ ]
+20211207 18:43:14.578 - INFO - + START SUITE: Tests [ ]
 ==============================================================================
-20211207 17:21:05.239 - INFO - +- START SUITE: Tests.Linux Keywords [ ]
+20211207 18:43:14.587 - INFO - +- START SUITE: Tests.Basic Tests [ ]
 ==============================================================================
-20211207 17:21:05.247 - INFO - +-- START SUITE: Tests.Linux Keywords.01 Test Enviroment [ ]
+20211207 18:43:14.613 - INFO - +-- START SUITE: Tests.Basic Tests.01 Test Enviroment [ ]
 ==============================================================================
-20211207 17:21:05.248 - INFO - +--- START TEST: Print To Console [ ]
+20211207 18:43:14.615 - INFO - +--- START TEST: Print To Console [ ]
 ------------------------------------------------------------------------------
-20211207 17:21:05.249 - INFO - +---- START KEYWORD: keywords.Print Message ${hello_msg} To Console [ ]
-20211207 17:21:05.250 - INFO - +----- START KEYWORD: BuiltIn.Log To Console [ ${message} ]
-20211207 17:21:05.251 - INFO - +----- END KEYWORD: BuiltIn.Log To Console (1)
-20211207 17:21:05.252 - INFO - +---- END KEYWORD: keywords.Print Message ${hello_msg} To Console (2)
+20211207 18:43:14.616 - INFO - +---- START KEYWORD: keywords.Print Message ${hello_msg} To Console [ ]
+20211207 18:43:14.618 - INFO - +----- START KEYWORD: BuiltIn.Log To Console [ ${message} ]
+20211207 18:43:14.619 - INFO - +----- END KEYWORD: BuiltIn.Log To Console (1)
+20211207 18:43:14.619 - INFO - +---- END KEYWORD: keywords.Print Message ${hello_msg} To Console (3)
 ------------------------------------------------------------------------------
-20211207 17:21:05.253 - INFO - +--- END TEST: Print To Console (4)
+20211207 18:43:14.620 - INFO - +--- END TEST: Print To Console (5)
 ------------------------------------------------------------------------------
-20211207 17:21:05.255 - INFO - +-- END SUITE: Tests.Linux Keywords.01 Test Enviroment (14)
+20211207 18:43:14.621 - INFO - +--- START TEST: Sum List [ ]
+------------------------------------------------------------------------------
+20211207 18:43:14.622 - INFO - +---- START KEYWORD: keywords.Sum List Check [ ]
+20211207 18:43:14.622 - INFO - +----- START KEYWORD: math_operations.Sum List [ ${odd_list} ]
+20211207 18:43:14.623 - INFO - ${sum} = 25.0
+20211207 18:43:14.623 - INFO - +----- END KEYWORD: math_operations.Sum List (1)
+20211207 18:43:14.623 - INFO - +----- START KEYWORD: BuiltIn.Log To Console [ ${sum} ]
+20211207 18:43:14.624 - INFO - +----- END KEYWORD: BuiltIn.Log To Console (1)
+20211207 18:43:14.625 - INFO - +---- END KEYWORD: keywords.Sum List Check (2)
+------------------------------------------------------------------------------
+20211207 18:43:14.626 - INFO - +--- END TEST: Sum List (4)
+------------------------------------------------------------------------------
+20211207 18:43:14.630 - INFO - +-- END SUITE: Tests.Basic Tests.01 Test Enviroment (39)
 ==============================================================================
-20211207 17:21:05.257 - INFO - +- END SUITE: Tests.Linux Keywords (19)
+20211207 18:43:14.633 - INFO - +- END SUITE: Tests.Basic Tests (52)
 ==============================================================================
-20211207 17:21:05.259 - INFO - + END SUITE: Tests (57)
+20211207 18:43:14.636 - INFO - + END SUITE: Tests (102)
 ==============================================================================

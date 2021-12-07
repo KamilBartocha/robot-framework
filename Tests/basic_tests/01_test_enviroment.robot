@@ -5,5 +5,8 @@ Force Tags       PRINT
 
 *** Test Cases ***
 Print To Console
-    [Documentation]    Checks robot works, TC should print some msg to Console
+    [Documentation]    Checks if robot works, TC should print some msg to Console
     Print Message ${hello_msg} To Console
+Sum List
+    [Documentation]    Call sum list keyword
+    Sum List Check
