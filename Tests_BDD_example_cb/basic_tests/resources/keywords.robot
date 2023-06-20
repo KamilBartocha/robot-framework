@@ -20,4 +20,4 @@ Sum two numbers
 
 Sum equals desired value
     [Documentation]    Checks if sum equals real value
-    Should Be Equal As Integers    ${sum}    ${5}
+    Should Be Equal As Integers    ${sum}    ${8}

@@ -1,74 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1 (Python 3.9.6 on darwin)" generated="20230620 16:59:32.432" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1 (Python 3.9.6 on darwin)" generated="20230620 17:07:02.717" rpa="false" schemaversion="4">
 <suite id="s1" name="01 Test Enviroment" source="/Users/kamil/Repositories/robot-framework/Tests_BDD_example_cb/basic_tests/01_test_enviroment.robot">
-<test id="s1-t1" name="Given" line="8">
-<kw name="Select two numbers" library="keywords">
+<test id="s1-t1" name="Test Calculate Two Numbers" line="7">
+<kw name="Given Select two numbers" library="keywords">
 <doc>Selects two int numbers from variables</doc>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${num1}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20230620 16:59:32.451" level="INFO">${num1} = 3</msg>
-<status status="PASS" starttime="20230620 16:59:32.450" endtime="20230620 16:59:32.451"/>
+<msg timestamp="20230620 17:07:02.735" level="INFO">${num1} = 3</msg>
+<status status="PASS" starttime="20230620 17:07:02.735" endtime="20230620 17:07:02.735"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${num2}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20230620 16:59:32.451" level="INFO">${num2} = 5</msg>
-<status status="PASS" starttime="20230620 16:59:32.451" endtime="20230620 16:59:32.451"/>
+<msg timestamp="20230620 17:07:02.736" level="INFO">${num2} = 5</msg>
+<status status="PASS" starttime="20230620 17:07:02.735" endtime="20230620 17:07:02.736"/>
 </kw>
-<status status="PASS" starttime="20230620 16:59:32.450" endtime="20230620 16:59:32.451"/>
+<status status="PASS" starttime="20230620 17:07:02.735" endtime="20230620 17:07:02.736"/>
 </kw>
-<tag>PRINT</tag>
-<status status="PASS" starttime="20230620 16:59:32.450" endtime="20230620 16:59:32.451"/>
-</test>
-<test id="s1-t2" name="When" line="9">
-<kw name="Sum two numbers" library="keywords">
+<kw name="When Sum two numbers" library="keywords">
 <doc>Sum two numbers and set result as global variable</doc>
 <kw name="Evaluate" library="BuiltIn">
 <var>${sum}</var>
 <arg>${num1} + ${num2}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20230620 16:59:32.452" level="INFO">${sum} = 8</msg>
-<status status="PASS" starttime="20230620 16:59:32.452" endtime="20230620 16:59:32.452"/>
+<msg timestamp="20230620 17:07:02.736" level="INFO">${sum} = 8</msg>
+<status status="PASS" starttime="20230620 17:07:02.736" endtime="20230620 17:07:02.736"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${sum}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20230620 16:59:32.452" level="INFO">${sum} = 8</msg>
-<status status="PASS" starttime="20230620 16:59:32.452" endtime="20230620 16:59:32.452"/>
+<msg timestamp="20230620 17:07:02.737" level="INFO">${sum} = 8</msg>
+<status status="PASS" starttime="20230620 17:07:02.736" endtime="20230620 17:07:02.737"/>
 </kw>
-<status status="PASS" starttime="20230620 16:59:32.451" endtime="20230620 16:59:32.452"/>
+<status status="PASS" starttime="20230620 17:07:02.736" endtime="20230620 17:07:02.737"/>
 </kw>
-<tag>PRINT</tag>
-<status status="PASS" starttime="20230620 16:59:32.451" endtime="20230620 16:59:32.452"/>
-</test>
-<test id="s1-t3" name="Then" line="10">
-<kw name="Sum equals desired value" library="keywords">
+<kw name="Then Sum equals desired value" library="keywords">
 <doc>Checks if sum equals real value</doc>
 <kw name="Should Be Equal As Integers" library="BuiltIn">
 <arg>${sum}</arg>
-<arg>${5}</arg>
+<arg>${8}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<msg timestamp="20230620 16:59:32.453" level="FAIL">8 != 5</msg>
-<status status="FAIL" starttime="20230620 16:59:32.453" endtime="20230620 16:59:32.453"/>
+<status status="PASS" starttime="20230620 17:07:02.737" endtime="20230620 17:07:02.738"/>
 </kw>
-<status status="FAIL" starttime="20230620 16:59:32.453" endtime="20230620 16:59:32.453"/>
+<status status="PASS" starttime="20230620 17:07:02.737" endtime="20230620 17:07:02.738"/>
 </kw>
 <tag>PRINT</tag>
-<status status="FAIL" starttime="20230620 16:59:32.452" endtime="20230620 16:59:32.453">8 != 5</status>
+<status status="PASS" starttime="20230620 17:07:02.735" endtime="20230620 17:07:02.738"/>
 </test>
 <doc>This Test Suite covers linux cmd keywords</doc>
-<status status="FAIL" starttime="20230620 16:59:32.433" endtime="20230620 16:59:32.454"/>
+<status status="PASS" starttime="20230620 17:07:02.718" endtime="20230620 17:07:02.738"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="2" fail="1" skip="0">PRINT</stat>
+<stat pass="1" fail="0" skip="0">PRINT</stat>
 </tag>
 <suite>
-<stat pass="2" fail="1" skip="0" id="s1" name="01 Test Enviroment">01 Test Enviroment</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="01 Test Enviroment">01 Test Enviroment</stat>
 </suite>
 </statistics>
 <errors>

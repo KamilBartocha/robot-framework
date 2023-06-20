@@ -4,7 +4,7 @@ Resource         resources/keywords.robot
 Force Tags       PRINT
 
 *** Test Cases ***
-
-Given    Select two numbers
-When     Sum two numbers
-Then     Sum equals desired value
+Test Calculate Two Numbers
+    Given Select two numbers
+    When Sum two numbers
+    Then Sum equals desired value
