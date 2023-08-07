@@ -1,10 +1,10 @@
 *** Settings ***
-Documentation    This Test Suite covers linux cmd keywords
+Documentation    This Test Suite covers calculator
 Resource         resources/keywords.robot
-Force Tags       PRINT
+Force Tags       Calculator
 
 *** Test Cases ***
-Test Calculate Two Numbers
+Test Calculator Add Two Numbers
     Given Select two numbers
     When Sum two numbers
     Then Sum equals desired value

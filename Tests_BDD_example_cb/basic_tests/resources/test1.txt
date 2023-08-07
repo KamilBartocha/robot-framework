@@ -1,0 +1,26 @@
+wp.pl
+
+wymaganie:
+- User może zalogować się do poczty online
+(zakładamy, że istnieje w bazie danych)
+- jeśli nie istnieje w bazie danych
+ poproś o popranie wpisanie loginu
+ lub hasła, zaproponuj założenie nowego konta
+
+
+Scenariusz1 - pozytywny
+
+GIVEN Otwarta strona z pocztą
+ AND  Wpisany login(adres email) i hasło(poprawne)
+WHEN kliknięcie przycisku zaloguj się
+THEN User jest zalogowany i widzi pocztę(Obebrane)
+
+Scenariusz2 - negatywny
+
+GIVEN Otwarta strona z pocztą
+ AND  Wpisany login(adres email- poprawne) i hasło(nie poprawne)
+WHEN kliknięcie przycisku zaloguj
+THEN zostaniemy na tej samej stronie i wyświetli się komunikat
+     z niepoprawym logowaniem i prośbą o ponowne zalogowanie
+
+PASS

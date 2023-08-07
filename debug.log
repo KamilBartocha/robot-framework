@@ -1,0 +1,79 @@
+==============================================================================
+20230807 19:03:44.500 - INFO - + START SUITE: 02 All In One [ ]
+==============================================================================
+20230807 19:03:44.500 - INFO - +- START TEST: Sum values [ ]
+------------------------------------------------------------------------------
+20230807 19:03:44.500 - INFO - +-- START SETUP: BuiltIn.Log To Console [ "start" ]
+20230807 19:03:44.500 - INFO - +-- END SETUP: BuiltIn.Log To Console (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20230807 19:03:44.500 - INFO - +-- START KEYWORD: Sum two values [ ]
+20230807 19:03:44.501 - INFO - +--- START KEYWORD: BuiltIn.Should Not Be Empty [ ${var1} ]
+20230807 19:03:44.501 - INFO - Length is 1
+20230807 19:03:44.501 - INFO - +--- END KEYWORD: BuiltIn.Should Not Be Empty (0)
+20230807 19:03:44.501 - INFO - +--- START KEYWORD: BuiltIn.Should Not Be Empty [ ${var2} ]
+20230807 19:03:44.501 - INFO - Length is 1
+20230807 19:03:44.501 - INFO - +--- END KEYWORD: BuiltIn.Should Not Be Empty (0)
+20230807 19:03:44.501 - INFO - +--- START KEYWORD: BuiltIn.Evaluate [ ${var1} + ${var2} ]
+20230807 19:03:44.501 - INFO - ${result} = 5
+20230807 19:03:44.501 - INFO - +--- END KEYWORD: BuiltIn.Evaluate (0)
+20230807 19:03:44.501 - INFO - +--- START KEYWORD: BuiltIn.Log To Console [ ${result} ]
+20230807 19:03:44.502 - INFO - +--- END KEYWORD: BuiltIn.Log To Console (1)
+20230807 19:03:44.502 - INFO - +-- END KEYWORD: Sum two values (2)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20230807 19:03:44.502 - INFO - +-- START TEARDOWN: BuiltIn.Log To Console [ "koniec" ]
+20230807 19:03:44.502 - INFO - +-- END TEARDOWN: BuiltIn.Log To Console (0)
+------------------------------------------------------------------------------
+20230807 19:03:44.502 - INFO - +- END TEST: Sum values (2)
+------------------------------------------------------------------------------
+20230807 19:03:44.502 - INFO - +- START TEST: Execute command and except not empty return [ ]
+------------------------------------------------------------------------------
+20230807 19:03:44.503 - INFO - +-- START SETUP: BuiltIn.Log To Console [ "start" ]
+20230807 19:03:44.503 - INFO - +-- END SETUP: BuiltIn.Log To Console (1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20230807 19:03:44.503 - INFO - +-- START KEYWORD: os_operations.Execute Local Command [ ${cmd_ls} ]
+20230807 19:03:44.510 - INFO - ${result} = 1.sql
+Applications
+Desktop
+Documents
+Downloads
+Library
+Movies
+Music
+Pictures
+Postman
+Public
+PycharmProjects
+Repositories
+def decorator_lovercase(function):.py
+test
+20230807 19:03:44.510 - INFO - +-- END KEYWORD: os_operations.Execute Local Command (7)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20230807 19:03:44.511 - INFO - +-- START KEYWORD: BuiltIn.Set Local Variable [ ${result} ]
+20230807 19:03:44.511 - INFO - ${result} = 1.sql
+Applications
+Desktop
+Documents
+Downloads
+Library
+Movies
+Music
+Pictures
+Postman
+Public
+PycharmProjects
+Repositories
+def decorator_lovercase(function):.py
+test
+20230807 19:03:44.511 - INFO - +-- END KEYWORD: BuiltIn.Set Local Variable (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20230807 19:03:44.511 - INFO - +-- START KEYWORD: BuiltIn.Should Not Be Empty [ ${result} ]
+20230807 19:03:44.511 - INFO - Length is 164
+20230807 19:03:44.512 - INFO - +-- END KEYWORD: BuiltIn.Should Not Be Empty (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20230807 19:03:44.512 - INFO - +-- START TEARDOWN: BuiltIn.Log To Console [ "koniec" ]
+20230807 19:03:44.512 - INFO - +-- END TEARDOWN: BuiltIn.Log To Console (0)
+------------------------------------------------------------------------------
+20230807 19:03:44.512 - INFO - +- END TEST: Execute command and except not empty return (10)
+------------------------------------------------------------------------------
+20230807 19:03:44.513 - INFO - + END SUITE: 02 All In One (26)
+==============================================================================
