@@ -3,3 +3,4 @@ logs/debug.log
 logs/log.html
 logs/output.xml
 logs/report.html
+.DS_Store

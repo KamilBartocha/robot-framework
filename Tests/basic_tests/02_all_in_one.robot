@@ -33,4 +33,3 @@ Execute command and except not empty return
     ${result}    Execute local command    ${cmd_ls}
     Set Local Variable    ${result}
     Should Not Be Empty    ${result}
-    # Log To Console    ${result}
