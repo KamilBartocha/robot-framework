@@ -1,4 +1,4 @@
-from TestObject import TestObject
+# from TestObject import TestObject
 from robot.api.logger import info, debug, trace, console
 from robot.api.deco import keyword
 
@@ -33,11 +33,12 @@ class CustomLibrary:
         self._session = None
         self.login = ''
         self.password = ''
-        self._connection: TestObject = None
+        # self._connection: TestObject = None
 
     @keyword
     def connect(self, ip):
-        self._connection = TestObject(ip)
+        pass
+        # self._connection = TestObject(ip)
 
     @keyword
     def disconnect(self):

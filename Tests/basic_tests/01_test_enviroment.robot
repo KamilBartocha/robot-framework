@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    This Test Suite covers linux cmd keywords
 Resource         resources/keywords.robot
-Force Tags       PRINT
+Test Tags       PRINT
 
 *** Test Cases ***
 Print To Console
